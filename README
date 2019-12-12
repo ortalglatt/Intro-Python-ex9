@@ -1,0 +1,47 @@
+ortal.netzer
+312416845
+ortal glatt
+
+=============================
+=  README for ex9:   =
+=============================
+
+
+==================
+=  Description:  =
+==================
+In this exercise, we built three classes - Car, Board, Game.
+The game class is using functions from the Car and the Board classes, and by
+using them, it runs the whole game.
+
+* The Car class:
+Attributes: name, length, location and orientation.
+This class doesn't know the board and the game.
+The class contains:
+Functions that return an information about the car -
+  name, car coordinates, possible moves due to the orientation, what cell need
+  to be empty if the user wants to move it to some direction.
+Functions that change the car attributes -
+  moves the car by changing it's location.
+
+* The Board class:
+This class knows the board and the cars on the board, but doesn't know the
+game.
+The class contains:
+Functions that return an information about the board -
+  list of all the cells in the board, the target coordinates, a list of all the
+  possible moves of the cars on the board, if a specific cell is content.
+Functions that change the board -
+  add new car to the board, move a car one step on the board to a specific
+  direction.
+
+* The Game class:
+Attributes: board.
+This class knows all the rules of the game, and it knows the cars and the
+board.
+The class contains:
+Function that check if the user's input is valid, function that runs a single
+turn and a function that runs the whole game.
+
+* Out of the class, their is the function add_car, that set the beginning board
+due to the information in the json file (that the user asked).
